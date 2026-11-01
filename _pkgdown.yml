@@ -1,0 +1,24 @@
+url: https://etc5523-2026.github.io/etc5523-assignment-4-kjam0022/
+
+
+template:
+  bootstrap: 5
+  bslib:
+    primary: "#0F4C5C"
+
+reference:
+  - title: Launch the app
+    contents:
+      - run_app
+  - title: Summarise the data
+    contents:
+      - summarise_trash
+  - title: Data
+    contents:
+      - trash_collections
+
+articles:
+  - title: Guides
+    contents:
+      - explore-trash-wheels
+
