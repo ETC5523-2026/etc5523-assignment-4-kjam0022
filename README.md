@@ -1,0 +1,56 @@
+# trashwheelexplorer
+
+An R package with a Shiny app for exploring what Baltimore's Trash Wheels collect.
+
+**Documentation website:** <https://etc5523-2026.github.io/etc5523-assignment-4-kjam0022/>
+
+## Purpose
+
+**Intended user:** an analyst at a Baltimore waterway-cleanup programme who needs to decide which kinds of rubbish to target.
+
+**Question:** Which types of rubbish does each Trash Wheel collect most per dumpster load, and has that changed over the years?
+
+The app lets the analyst choose Trash Wheels, rubbish types and a range of years. It then shows how the average number of items per dumpster load changes over time, which wheel is highest for each rubbish type, and the numbers behind the chart.
+
+## Data
+
+The package includes `trash_collections`, a data frame of dumpster collections from four Trash Wheels (Mister, Professor, Captain and Gwynnda) between 2014 and 2023. It has 6,951 rows: 993 dumpster collections, each with seven rubbish types. Item counts are estimates based on samples. A missing count means the rubbish type was not recorded, not that nothing was collected, so the package never treats missing counts as zero.
+
+- **Source:** TidyTuesday, Trash Wheel Collection Data (2024-03-05), <https://github.com/rfordatascience/tidytuesday/tree/main/data/2024/2024-03-05>.
+- **Original data:** Mr. Trash Wheel Baltimore Healthy Harbor initiative, <https://www.mrtrashwheel.com/>.
+- **Preparation:** `data-raw/trash_collections.R` downloads the CSV, cleans the names, parses the dates and reshapes the data from wide to long. Run it to rebuild `data/trash_collections.rda`.
+
+## Installation
+
+```r
+# install.packages("remotes")
+remotes::install_github("ETC5523-2026/etc5523-assignment-4-kjam0022")
+```
+
+## Launch the app
+
+```r
+library(trashwheelexplorer)
+run_app()
+```
+
+## Use the summary function
+
+`summarise_trash()` summarises the average and total items per collection by wheel, year and rubbish type:
+
+```r
+library(trashwheelexplorer)
+
+summarise_trash(
+  trash_collections,
+  wheels = "Mister Trash Wheel",
+  trash_types = "Plastic Bottles",
+  years = c(2020, 2023)
+)
+```
+
+## AI declaration
+
+Generative AI declaration: ## AI declaration
+
+Generative AI declaration: I used ChatGPT to seek guidance while developing and troubleshooting my R package and Shiny application. This included asking questions about R errors and debugging, understanding why certain errors occurred, identifying missing or uninstalled packages, resolving issues with R not displaying output, and understanding how to create and save text files directly from macOS outside RStudio. I also sought advice on whether restarting R or RStudio would help resolve technical issues. I reviewed the suggestions and used my own judgement when applying solutions and working on the project.

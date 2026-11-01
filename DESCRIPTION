@@ -1,0 +1,21 @@
+Package: trashwheelexplorer
+Title: Explore What Baltimore's Trash Wheels Collect
+Version: 0.0.0.9000
+Authors@R:
+    person("Krrish", "Jambhulkar", , "kjam0022@student.monash.edu", role = c("aut", "cre"))
+Description: Provides a tidy dataset of dumpster collections from
+    Baltimore's Trash Wheels, a function that summarises estimated
+    rubbish counts by wheel and year, and a Shiny app for exploring
+    what each wheel collects over time.
+Depends: R (>= 4.1.0)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+License: MIT + file LICENSE
+Imports: 
+    bslib,
+    dplyr,
+    ggplot2,
+    shiny,
+    utils
+Config/roxygen2/version: 8.1.1
