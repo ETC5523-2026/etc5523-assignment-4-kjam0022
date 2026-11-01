@@ -19,3 +19,7 @@ Imports:
     shiny,
     utils
 Config/roxygen2/version: 8.1.1
+Suggests: 
+    knitr,
+    quarto
+VignetteBuilder: quarto
