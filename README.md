@@ -51,6 +51,4 @@ summarise_trash(
 
 ## AI declaration
 
-Generative AI declaration: ## AI declaration
-
 Generative AI declaration: I used ChatGPT to seek guidance while developing and troubleshooting my R package and Shiny application. This included asking questions about R errors and debugging, understanding why certain errors occurred, identifying missing or uninstalled packages, resolving issues with R not displaying output, and understanding how to create and save text files directly from macOS outside RStudio. I also sought advice on whether restarting R or RStudio would help resolve technical issues. I reviewed the suggestions and used my own judgement when applying solutions and working on the project.
