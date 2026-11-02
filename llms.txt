@@ -73,8 +73,6 @@ summarise_trash(
 
 ## AI declaration
 
-Generative AI declaration: \## AI declaration
-
 Generative AI declaration: I used ChatGPT to seek guidance while
 developing and troubleshooting my R package and Shiny application. This
 included asking questions about R errors and debugging, understanding
